@@ -1,0 +1,10 @@
+version: '3'
+services:
+    race:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        ports:
+            - "1000:9999"
+        environment:
+            - FLAG=zsctf{simp13-Race-C0ndition}
