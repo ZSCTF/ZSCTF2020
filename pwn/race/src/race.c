@@ -9,7 +9,7 @@ void Init(){
     setbuf(stdin,0);
     setbuf(stderr,0);
 
-    list = malloc(0x10);
+    list = malloc(0xE0);
 }
 
 void Choice(){
@@ -33,7 +33,7 @@ int Input(){
 void Add(){
     puts("index:");
     int index=Input();
-    if(index>32||index<0)
+    if(index>27||index<0||!list[index])
         exit(0);
     list[index]=malloc(0xa0);
     puts("content:");
@@ -43,7 +43,7 @@ void Add(){
 void Delete(){
     puts("index:");
     int index=Input();
-    if(index>32||index<0)
+    if(index>27||index<0||!list[index])
         exit(0);
     free(list[index]);
     list[index]=0;
@@ -61,7 +61,7 @@ void Gu(){
     pthread_t tidp;
     puts("index:");
     int index=Input();
-    if(index>32||index<0)
+    if(index>27||index<0||list[index])
         exit(0);
     pthread_create(&tidp, NULL, run, list[index]);
     sleep(1);
