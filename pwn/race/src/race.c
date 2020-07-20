@@ -33,7 +33,7 @@ int Input(){
 void Add(){
     puts("index:");
     int index=Input();
-    if(index>27||index<0||!list[index])
+    if(index>27||index<0)
         exit(0);
     list[index]=malloc(0xa0);
     puts("content:");
