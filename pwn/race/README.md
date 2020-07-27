@@ -1,11 +1,34 @@
-题目名称：Race
+# Race
 
-搭建：cd ${your_pwd}/challenge && docker-compose up -d 
+## 题目名称
 
-简介：nc cloudtest.zhakul.top 1000  (测试环境)
+race
 
-分类：pwn
+## 分类
 
-分数：50（预定）
+* pwn
 
-flag：zsctf{simp13-Race-C0ndition} （默认为此，可通过docker-compose.yml中环境变量修改）
+## 分数
+
+50
+
+## flag
+
+```txt
+zsctf{simp13-Race-C0ndition} 
+```
+
+## develop
+
+```bash
+# 测试环境
+nc cloudtest.zhakul.top 1000  
+```
+
+## 题目搭建
+
+```bash
+cd pwn/rece/docker && docker-compose up -d
+```
+
+> 修改 docker-compose.yml 环境变量可改变 flag。

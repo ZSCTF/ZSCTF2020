@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <pthread.h>
-static long *list;
+static * *list;
 
 void Init(){
     setbuf(stdout, 0);
@@ -33,7 +33,7 @@ int Input(){
 void Add(){
     puts("index:");
     int index=Input();
-    if(index>27||index<0)
+    if(index>27||index<0||list[index])
         exit(0);
     list[index]=malloc(0xa0);
     puts("content:");
@@ -51,9 +51,10 @@ void Delete(){
 
 void *run(long *task){
     puts("Think about your reason");
-    sleep(3);
+    sleep(5);
+    puts("Because");
     read(0,task,0xa0);
-    printf("Because %s so you gugugu",task);
+    printf("%s so you gugugu",task);
 }
 
 
@@ -61,7 +62,7 @@ void Gu(){
     pthread_t tidp;
     puts("index:");
     int index=Input();
-    if(index>27||index<0||list[index])
+    if(index>27||index<0||!list[index])
         exit(0);
     pthread_create(&tidp, NULL, run, list[index]);
     sleep(1);
