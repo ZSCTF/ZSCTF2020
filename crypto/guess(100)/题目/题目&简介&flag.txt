@@ -1,4 +1,4 @@
-题目：import twentyfive
+题目：屋长和她的 Python
 
 简介：
 <p>有一天，屋长在她最讨厌的 Python 里输入了以下命令：</p>

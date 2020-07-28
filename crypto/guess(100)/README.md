@@ -1,4 +1,4 @@
-# import twentyfive
+# 屋长和她的 Python
 
 有一天，屋长在她最讨厌的 Python 里输入了以下命令：
 
