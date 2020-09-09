@@ -1,6 +1,7 @@
 # i wanna solve 100 equations
 
-是男人就解 100 个方程
+是男人就解 100 个方程  
+提示：`import sympy`
 
 **附件：**
 
@@ -16,4 +17,4 @@ re
 
 ## flag
 
-`zsctf{import_sympy_or_z3_is_easier}`
+`zsctf{WoW_You_Can_REALLY_SoLve_EquaTions}`
