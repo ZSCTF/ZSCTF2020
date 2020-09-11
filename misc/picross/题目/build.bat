@@ -1,0 +1,1 @@
+pyinstaller -F picross.py --distpath .
