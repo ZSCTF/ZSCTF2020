@@ -1,1 +1,1 @@
-g++ -g -Wall -O0 -std=c++11 "iwanna.cpp" -o "iwanna"
+g++ -g -Wall -O0 -std=c++11 -static "iwanna.cpp" -o "iwanna"
