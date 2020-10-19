@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nginx:
+    image: hub.c.163.com/library/nginx:latest
+    volumes:
+      - ./web.conf:/etc/nginx/conf.d/web.conf:ro
+      - ./git_and_vim/.N1u96ruhN5w9IXV8Vaz5.txt.swp:/usr/share/nginx/html/git_and_vim/.N1u96ruhN5w9IXV8Vaz5.txt.swp:ro
+      - ./git_and_vim/index.html:/usr/share/nginx/html/git_and_vim/index.html:ro
+      - ./git/:/usr/share/nginx/html/git_and_vim/.git/:ro
+    ports:
+      - "9000:9000"
+    restart: always
