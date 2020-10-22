@@ -2,7 +2,7 @@
 
 ## 题目名称
 
-race
+simple_fmt
 
 ## 分类
 
@@ -10,25 +10,25 @@ race
 
 ## 分数
 
-75
+50
 
 ## flag
 
 ```txt
-zsctf{simp13-Race-C0ndition} 
+zsctf{fmt_gogogo_2020}
 ```
 
 ## develop
 
 ```bash
 # 测试环境
-nc cloudtest.zhakul.top 1000  
+无
 ```
 
 ## 题目搭建
 
 ```bash
-cd pwn/rece/docker && docker-compose up -d
+cd pwn/simple_fmt/docker && docker-compose up -d
 ```
 
 > 修改 docker-compose.yml 环境变量可改变 flag。

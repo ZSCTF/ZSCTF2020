@@ -1,0 +1,10 @@
+version: '3'
+services:
+    race:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        ports:
+            - "1001:9999"
+        environment:
+            - FLAG=zsctf{fmt_gogogo_2020}

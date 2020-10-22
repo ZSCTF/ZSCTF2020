@@ -13,3 +13,6 @@
 *.7z filter=lfs diff=lfs merge=lfs -text
 pwn/race/docker/bin/race filter=lfs diff=lfs merge=lfs -text
 pwn/race/challenge filter=lfs diff=lfs merge=lfs -text
+
+pwn/simple_fmt/challenge  filter=lfs diff=lfs merge=lfs -text
+pwn/simple_fmt/docker/bin/fmt filter=lfs diff=lfs merge=lfs -text
