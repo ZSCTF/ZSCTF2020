@@ -1,0 +1,1 @@
+g++ -g -Wall -O0 -std=c++11 -static "rsx.cpp" -o "rsx"
