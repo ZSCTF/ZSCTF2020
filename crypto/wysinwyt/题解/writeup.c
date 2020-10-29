@@ -3,6 +3,7 @@
 #include <string.h>
 #include <assert.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 char encode_characters[65] = "0123456789aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ+-";
 
@@ -122,17 +123,20 @@ int main()
     char correct_input[17] = {0};
     solve(correct_input);
 
-    printf("welcome to zsctf2020 guess game\n");
+    printf("welcome to zsctf2020 broken keyboard game\n");
     printf("please enter 16 letters or digits: ");
 
-    char input[17] = {0},
-         output[17] = {0};
+    char input[17] = {0}, output[17] = {0};
 
     int len = 0;
     int last = 0;
-    while (len < 16)
+    while (true)
     {
         char c = correct_input[len];
+        if (len >= 16)
+        {
+            break;
+        }
         last = last ^ find_index(encode_characters, c) ^ (len << 2);
         input[len] = c;
         output[len] = encode_characters[last];

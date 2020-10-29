@@ -1,1 +1,0 @@
-gcc -Wall -O2 -std=c99 "guess.c" -o "guess"
