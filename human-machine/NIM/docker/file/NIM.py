@@ -53,7 +53,7 @@ class NIM:
 
 class ThreadedTCPRequestHandler(socketserver.BaseRequestHandler):
     def handle(self):
-        self.request.settimeout(100)
+        self.request.settimeout(3)
         self.request.send(
             "--------------------拈------------------\n"
             "规则：\n"
