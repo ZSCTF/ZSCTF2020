@@ -1,7 +1,7 @@
 from random import randint
 import socketserver
 
-PORT = 9000
+PORT = 9999
 flag = open('flag').read().strip()
 
 
