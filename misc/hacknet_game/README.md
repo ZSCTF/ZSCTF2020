@@ -4,7 +4,7 @@
 
 注意：（请一定要仔细看完）
 
-- **文件仅供比赛使用，请于比赛结束后 6 小时内删除，如果你想赛后补题的话，可以自行购买正版后打补丁（补丁链接赛后会放出）**
+- **文件仅供比赛使用，请于比赛结束后 6 小时内删除，~~如果你想赛后补题的话，可以自行购买正版后打补丁（补丁链接赛后会放出）~~**
 - 由于某些原因，只能在 Windows 上运行才能正常拿到 flag
 - 推荐先尝试打开 `Hacknet.exe`，打不开的话再尝试 `Hacknet_xna.exe`（应该还要装些运行库之类的）
 - 如果你是在实验室电脑上玩的话，请务必在设置里关闭 “多重采样”，不然游戏会很卡
@@ -16,7 +16,7 @@
 
 **附件：**
 
-- [Hacknet.zip](http://wegfan.oss-cn-shenzhen.aliyuncs.com/Hacknet.zip?OSSAccessKeyId=LTAI4G6ssb9yAxZBita91PVm&Expires=1604131200&Signature=dHECVRe9ElL38wHSme3RWzMB624%3D)（北京时间 2020-10-31 16:00:00 后过期）
+- Hacknet.zip
 
 ## 分类
 
